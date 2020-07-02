@@ -10,9 +10,14 @@ const App = () => {
     getData().then((data) => setData(data))
   }, [])
 
-  console.log("DATA", data)
   return (
-    <div>{data?.map((item) => <ul><li>{item.title}</li></ul>)}</div>
+    <div>
+      {data?.map((item) =>
+        <ul>
+          <li>{item.title}</li>
+        </ul>
+      )}
+    </div>
   )
 }
 
